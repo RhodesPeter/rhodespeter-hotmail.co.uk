@@ -21,6 +21,7 @@ p {
 }
 
 .site-footer {
+    /* height: 283px; Removed this line as the footer is not bigger with the new text */
     width: 100%;
     background-color: #000000;
     color: white;
@@ -29,7 +30,6 @@ p {
     bottom: 0;
     left: 0;
     overflow: hidden;
-    height: 283px;
     width: 100%;
     padding-bottom: 0;
     text-align: left;
@@ -51,6 +51,6 @@ p {
     max-width: 1040px;
     padding: 30px 0;
     width: 100%;
-    padding: 25px 20px 60px;
+    padding: 25px 20px; /* Changed this value from 60px at the bottom */
     max-width: 100%;
 }

@@ -3,9 +3,62 @@
 // JS modules are not being used so I've included this as well.
 
 // <----------- ES6 ----------->
-// const people = ['Charlie', 'Jake', 'Alex', 'Harry', 'Peter'];
-// const object = ['Hat', 'Scooter', 'Dog', 'Piano'];
-// const places = ['Cinema', 'Beijing', 'The Park', 'Brighton', 'Garden']
+// const people = [
+//   'People',
+//   'Community',
+//   'Crowds',
+//   'Family',
+//   'Public',
+//   'Citizens',
+//   'Plants',
+//   'Cats',
+//   'Education',
+//   'Culture',
+//   'Detail',
+//   'Typefaces',
+//   'Tools',
+//   'Robots',
+//   'Dinosaurs',
+//   'Learning'
+// ];
+  
+// const object = [
+//   'Place',
+//   'Area',
+//   'Research',
+//   'Experiments',
+//   'Printing',
+//   'Hangouts',
+//   'Vernacular',
+//   'Process',
+//   'Collaboration',
+//   'Mapping',
+//   'Co-design',
+//   'Production',
+//   'History',
+//   'Archives',
+//   'Photography',
+//   'Typography'
+// ];
+
+// const places = [
+//   'Local',
+//   'Park',
+//   'Town',
+//   'City',
+//   'Village',
+//   'Pub',
+//   'Café',
+//   'Shops',
+//   'Supermarket',
+//   'Studio',
+//   'Workshop',
+//   'Neighbourhood',
+//   'Canteen',
+//   'Corner',
+//   'Field',
+//   'Home'
+// ];
 
 // const randomNum = length => Math.floor(Math.random() * length) + 0;
 
@@ -21,9 +74,62 @@
 // siteInfo.prepend(sentence);
 
 // <----------- ES5 ----------->
-// var people = ["Charlie", "Jake", "Alex", "Harry", "Peter"];
-// var object = ["Hat", "Scooter", "Dog", "Piano"];
-// var places = ["Cinema", "Beijing", "The Park", "Brighton", "Garden"];
+// var people = [
+//   'People',
+//   'Community',
+//   'Crowds',
+//   'Family',
+//   'Public',
+//   'Citizens',
+//   'Plants',
+//   'Cats',
+//   'Education',
+//   'Culture',
+//   'Detail',
+//   'Typefaces',
+//   'Tools',
+//   'Robots',
+//   'Dinosaurs',
+//   'Learning'
+// ];
+  
+// var object = [
+//   'Place',
+//   'Area',
+//   'Research',
+//   'Experiments',
+//   'Printing',
+//   'Hangouts',
+//   'Vernacular',
+//   'Process',
+//   'Collaboration',
+//   'Mapping',
+//   'Co-design',
+//   'Production',
+//   'History',
+//   'Archives',
+//   'Photography',
+//   'Typography'
+// ];
+
+// var places = [
+//   'Local',
+//   'Park',
+//   'Town',
+//   'City',
+//   'Village',
+//   'Pub',
+//   'Café',
+//   'Shops',
+//   'Supermarket',
+//   'Studio',
+//   'Workshop',
+//   'Neighbourhood',
+//   'Canteen',
+//   'Corner',
+//   'Field',
+//   'Home'
+// ];
 
 // var randomNum = function randomNum(length) {
 //   return Math.floor(Math.random() * length) + 0;
@@ -45,10 +151,63 @@
 
 // <----------- ES5 in an IIFE ----------->
 (function () {
-    var people = ["Charlie", "Jake", "Alex", "Harry", "Peter"];
-    var object = ["Hat", "Scooter", "Dog", "Piano"];
-    var places = ["Cinema", "Beijing", "The Park", "Brighton", "Garden"];
-  
+  var people = [
+    'People',
+    'Community',
+    'Crowds',
+    'Family',
+    'Public',
+    'Citizens',
+    'Plants',
+    'Cats',
+    'Education',
+    'Culture',
+    'Detail',
+    'Typefaces',
+    'Tools',
+    'Robots',
+    'Dinosaurs',
+    'Learning'
+  ];
+    
+  var object = [
+    'Place',
+    'Area',
+    'Research',
+    'Experiments',
+    'Printing',
+    'Hangouts',
+    'Vernacular',
+    'Process',
+    'Collaboration',
+    'Mapping',
+    'Co-design',
+    'Production',
+    'History',
+    'Archives',
+    'Photography',
+    'Typography'
+  ];
+
+  var places = [
+    'Local',
+    'Park',
+    'Town',
+    'City',
+    'Village',
+    'Pub',
+    'Café',
+    'Shops',
+    'Supermarket',
+    'Studio',
+    'Workshop',
+    'Neighbourhood',
+    'Canteen',
+    'Corner',
+    'Field',
+    'Home'
+  ];
+
     var randomNum = function randomNum(length) {
       return Math.floor(Math.random() * length) + 0;
     };
@@ -62,7 +221,7 @@
     sentence.innerText = ""
       .concat(wordOne, ", ")
       .concat(wordTwo, " & ")
-      .concat(wordThree);
+      .concat('the ' + wordThree);
 
     siteInfo.prepend(sentence);
 })();
